@@ -1,0 +1,83 @@
+/*STEP 1 
+* Reset the margin, padding and set set the box-sizing to border-box to ensures that padding and border are included within the element's width and height, preventing layout issues.
+* Create a <div class=container> inside your <header> and put the <h1>, <nav> inside that container.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/*STEP 2
+*Give your <header> a background color (you may change this later, but for now give it a random color so it's easy to see what's going on).
+* Create a class for your <h1> in the <header> with the value of "name"
+* Create a class in <nav> and give it a value of "nav"
+* Make the <header> display in 100% by using the property width with a value of 100%. This allows you to display the header on fullscreen when loading your website.
+* Make the <header> a flex-box by using the property display with a value of flex. This displays the items in the <header> as a row.
+*/
+
+header {
+    background-color: lightblue;
+    display: flex;
+    height: 100vh; /* Or set a specific height like 100px */
+    width: 100vw; /* Ensures it takes up the full viewport width */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%; /* Ensures the container takes up the full width */
+    text-align: center;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    padding: 50px;
+    font-size: 80px;
+    
+}
+
+.profile-pic{
+    border-radius: 100%
+}
+
+.nav {
+    position: fixed;  /* Makes the nav stick to the top */
+    top: 0; /* Positions it at the top of the page */
+    left: 0;
+    width: 100%; /* Makes the navbar stretch across the page */
+    background-color: lightsalmon; /* Ensures visibility */
+    padding: 20px 0px 30px 0px; /* Adds some spacing */
+   z-index: 0; /* Keeps it above other content */
+}
+
+.nav {
+    display: flex;
+    justify-content: center; /* Centers the nav horizontally */
+}
+
+.nav ul {
+    display: flex;
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    gap: 30px; /* Adjust spacing between links */
+}
+
+.nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+
+
