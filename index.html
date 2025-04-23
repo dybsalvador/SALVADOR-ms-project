@@ -7,29 +7,34 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     <!--LANDING SECTION-->
-    <header id="home">
+    <header>
         <nav class="nav">
             <ul>
                 <li><a href="#home">Home</a></li>
+
                 <li><a href="#about">About</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#hobbies">Hobby</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="container">
-            <div class="row">
+        <div class="container-header">
                 <div class="profile">
-                 <img class="profile-pic" src="images/profile2.png" alt="">
-                    <h1 class="name">Dana Ysabelle B. Salvador</h1> 
+                   <img class="profile-pic" src="images/profile2.png" alt=""> 
+                   <h1>Dana Ysabelle B. Salvador</h1> 
                 </div>
-                
-            </div>
-            
+                <div class="button-group">
+                    <button class="btn-profile">Learn More</button>
+                    <button class="btn-profile">My Hobbies</button>
+                    <button class="btn-profile">Portfolio</button>
+
+                </div>
         </div>
+      
     </header>
 
     <!--ABOUT ME SECTION-->
@@ -37,21 +42,117 @@
     <section id="about">
         <h2>About Me</h2>
         <p>Brief introduction about yourself.</p>
+
+   <div class="row">
+    <div class="col-md-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="images/profile2.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Myself</h5>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-primary">See More</a>
+          </div>
+        </div>
+      </div>
+
+         <div class="col-md-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="images/dog.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">My Dog</h5>
+          <p class="card-text">This is my dog who loves to nap all day long.</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="images/dog.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Another Friend</h5>
+          <p class="card-text">Another quick blurb about someone or something.</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+   </div>
+       
+          </div>
     </section>
 
-    <!--HOBBIES SECTION-->
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <div class="hobby">
-            <h3>Hobby 1</h3>
-            <p>Description of hobby.</p>
-        </div>
-        <div class="hobbies">
-            <h3>Hobby 2</h3>
-            <p>Description of hobby.</p>
-        </div>
-    </section>
+    <!--PORTFOLIO-->
+    <section id="portfolio">
+        <h2>My Portflio</h2>
+        <div class="container mt-4">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title 1</h5>
+                    <p class="card-text">Some example text for card 1.</p>
+                    <a href="#" class="btn btn-primary">Click here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title 2</h5>
+                    <p class="card-text">Some example text for card 2.</p>
+                    <a href="#" class="btn btn-primary">Click here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title 3</h5>
+                    <p class="card-text">Some example text for card 3.</p>
+                    <a href="#" class="btn btn-primary">Click here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title 4</h5>
+                    <p class="card-text">Some example text for card 4.</p>
+                    <a href="#" class="btn btn-primary">Click here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title 5</h5>
+                    <p class="card-text">Some example text for card 5.</p>
+                    <a href="#" class="btn btn-primary">Click here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title 6</h5>
+                    <p class="card-text">Some example text for card 6.</p>
+                    <a href="#" class="btn btn-primary">Click here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
+<!--CONTACT SECTION-->
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: your.email@example.com</p>
